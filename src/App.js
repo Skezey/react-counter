@@ -13,9 +13,9 @@ class App extends Component {
     return (
       <div>
         <h1 className='colored'>Counter Example</h1>
-        <Counter />
-        <Counter />
-        <Counter />
+        <Counter name='red' />
+        <Counter name='blue' />
+        <Counter name='orange' />
       </div>
     )
   }

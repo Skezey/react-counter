@@ -19,9 +19,12 @@ class Counter extends Component {
   }
 
   render() {
+    const { name } = this.props
+    const { value } = this.state
     return (
-      <div>
-        <p>{ this.state.value }</p>
+      <div style={ { backgroundColor: name } }>
+      <h3>{ name }</h3>
+        <p>{ value }</p>
         <button onClick={this.inc}>+</button>
         <button onClick={this.dec}>-</button>
       </div>
